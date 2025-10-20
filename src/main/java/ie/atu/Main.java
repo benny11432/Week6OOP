@@ -1,10 +1,13 @@
 package ie.atu;
 
-public class TryMain {
+import java.util.Scanner;
+
+public class Main {
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int age = 0;
-        while(true) {
+        while (true) {
             System.out.print("Enter your age: ");
             String text = sc.nextLine().trim();
             try {
@@ -12,7 +15,9 @@ public class TryMain {
                 System.out.println("Thanks! You entered age = " + age);
                 break;
             } catch (NumberFormatException e) {
-                system.out.println("Invalid input" + e.getMessage());
+                System.out.println("Invalid input" + e.getMessage());
             }
         }
+
     }
+}
